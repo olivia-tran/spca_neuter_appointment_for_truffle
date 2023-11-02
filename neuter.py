@@ -59,10 +59,10 @@ def main():
     send_test_message()
 
     pushover_client = None
-    logging.info("Starting tracking for spca")
+    logging.info("Starting tracking SPCA neuter appointment availability")
     if PO_TOKEN and PO_USER:
         pushover_client = PushOver(token=PO_TOKEN, user=PO_USER)
-        pushover_client.send("Starting tracking for spca")
+        pushover_client.send("Starting tracking SPCA")
         print(PushOver)
         print(pushover_client.user)
         print(pushover_client.token)
